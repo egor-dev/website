@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Egor Ivanov</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <title>About Egor Ivanov</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
-<body>
-    <h1>Egor Ivanov</h1>
-    <p>Born 14 Nov 1985 in Siberia, Krasnoyarsk</p>
-    <p>Software Engineer with 16 years of experience</p>
-    <p>Living in Melbourne, Australia</p>
-    <p>Family: Wife Kate and son Miron</p>
+<body class="container py-4">
+    <h1 class="mb-4">Meet Egor Ivanov</h1>
+    <p>Hello! I'm Egor, a Siberian native born in the beautiful city of Krasnoyarsk. My journey in the tech world began 16 years ago, and I've been in love with software engineering ever since.</p>
+    <p>These days, I'm part of the team at <a href="https://eonx.com/" target="_blank">EonX</a>, where I continue to grow and learn as a professional.<br>My role is a backend team leader (an official title: lead back end developer).</p>
+    <p>I reside in the vibrant city of Melbourne, Australia</p>
+    <p>Life isn't all about work, though. I'm lucky to share my life with my wonderful wife, Kate, and our son, Miron. Together, we make a great team.</p>
+    <p>Want to know more about me? Feel free to connect with me on <a href="https://www.linkedin.com/in/egor-ivanov/" target="_blank">LinkedIn</a> or check out my <a href="https://www.youtube.com/channel/UCPNFpSLVbyG0ysJsTsD7L9w" target="_blank">YouTube channel</a>. I'd love to hear from you!</p>
+
+    <h2 class="mt-4">Professional Interests and Expertise</h2>
+    <ul>
+        <li>PHP, Python</li>
+        <li>Symfony, API Platform, Laravel</li>
+        <li>PostgreSQL, MySQL</li>
+        <li>AWS</li>
+        <li>Building RestFUL APIs</li>
+        <li>Team management</li>
+        <li>A significant experience developing fintech applications</li>
+    </ul>
+
+    <h2 class="mt-4">Contact Me</h2>
+    <form action="https://formspree.io/f/mwkgyejj" method="POST" class="mt-4">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="_replyto" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary">
+    </form>
 </body>
 </html>
