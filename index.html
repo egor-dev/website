@@ -9,6 +9,21 @@
             body {
                 font-family: 'JetBrains Mono', monospace;
             }
+            .interests-list {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+            }
+
+            .interests-list li {
+                padding: 10px;
+                margin: 5px;
+                border: 1px solid #ababab;
+                border-radius: 10px;
+                background-color: #f5f5f5;
+            }
         </style>
     </head>
 <!-- Google tag (gtag.js) -->
@@ -22,6 +37,7 @@
 </script>
 <body class="container py-4">
     <h1 class="mb-4">Egor Ivanov</h1>
+    <h6 class="mb-4" style="margin-top: -10px;">PHP Developer</h6>
     <div class="row">
         <div class="col-12 col-md-4">
             <img src="https://github.com/egor-dev/website/blob/main/images/egor_miron.jpg?raw=true" alt="Egor Ivanov" class="img-fluid rounded mb-4">
@@ -30,26 +46,28 @@
             <p>Hello! I'm Egor. I was born in Siberia, Krasnoyarsk. I'm a software engineer (team lead) with 16 years of experience.</p>
             <p>These days, I'm part of the team at <a href="https://eonx.com/" target="_blank">EonX</a>, where I continue to grow and learn as a professional.</p>
             <p>I reside in the vibrant city of Melbourne, Australia.</p>
-            <p>Life isn't all about work, though. I'm lucky to share my life with my wonderful wife, Kate, and our son, Miron. Together, we make a great team.</p>
+            <p>Life isn't all about work, though. I'm lucky to share my life with my wonderful wife, Kate, and our son, Miron.</p>
             
-            <p>Connect with me on <a href="https://www.linkedin.com/in/egor-ivanov/" target="_blank">LinkedIn</a> and check out my <a href="https://www.youtube.com/channel/UCPNFpSLVbyG0ysJsTsD7L9w" target="_blank">YouTube channel</a>.</p>
-        </div>
-    </div>
+            <h2 class="mt-4">Professional Interests and Expertise</h2>
 
-    <div>
-        <h2 class="mt-4">Professional Interests and Expertise</h2>
-            <ul>
-                <li>Symfony, API Platform, Laravel</li>
-                <li>PostgreSQL, MySQL</li>
-                <li>AWS</li>
-                <li>Team management</li>
+            <ul class="interests-list">
+                <li>Symfony</li>
+                <li>API Platform</li>
+                <li>Laravel</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>AWS Cognito|S3</li>
+                <li>Auth0</li>
+                <li>Dev Team Management</li>
             </ul>
+        </div>
     </div>
 
     <!-- Rest of your HTML code -->
 
     <div class="bg-light p-4 mt-4 rounded">
-        <h2>Contact Me</h2>
+        <h2>Send A Message</h2>
         <form action="https://formspree.io/f/mwkgyejj" method="POST" class="mt-4">
             <div class="form-group">
                 <label for="name">Your Name:</label>
@@ -67,7 +85,16 @@
         </form>
     </div>
 
-    <footer class="text-center mt-4">
+    <div class="p-4 mt-4 rounded text-center">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram logo" style="width: 20px; height: 20px;">
+            <a href="tg://resolve?domain=egor_siberia">
+                Contact me on Telegram
+            </a>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4 text-center">
         &copy; Egor Ivanov, <script>document.write(new Date().getFullYear());</script>
     </footer>
 
